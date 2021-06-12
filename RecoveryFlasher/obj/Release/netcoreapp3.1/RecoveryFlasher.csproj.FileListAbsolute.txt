@@ -1,0 +1,17 @@
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\bin\Release\netcoreapp3.1\RecoveryFlasher.exe
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\bin\Release\netcoreapp3.1\RecoveryFlasher.deps.json
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\bin\Release\netcoreapp3.1\RecoveryFlasher.runtimeconfig.json
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\bin\Release\netcoreapp3.1\RecoveryFlasher.runtimeconfig.dev.json
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\bin\Release\netcoreapp3.1\RecoveryFlasher.dll
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\bin\Release\netcoreapp3.1\RecoveryFlasher.pdb
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.csproj.AssemblyReference.cache
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.About.resources
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.MainForm.resources
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.Properties.Resources.resources
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.csproj.GenerateResource.cache
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.AssemblyInfoInputs.cache
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.AssemblyInfo.cs
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.csproj.CoreCompileInputs.cache
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.dll
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.pdb
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.genruntimeconfig.cache

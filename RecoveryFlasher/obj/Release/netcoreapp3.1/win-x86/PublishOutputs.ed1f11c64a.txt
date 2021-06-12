@@ -1,0 +1,2 @@
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\bin\Release\netcoreapp3.1\publish\RecoveryFlasher.pdb
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\bin\Release\netcoreapp3.1\publish\RecoveryFlasher.exe

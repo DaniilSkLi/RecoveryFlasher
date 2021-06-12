@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecoveryFlasher", "RecoveryFlasher\RecoveryFlasher.csproj", "{A08E2242-EA0A-4D23-B27D-780C7DD700D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A08E2242-EA0A-4D23-B27D-780C7DD700D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08E2242-EA0A-4D23-B27D-780C7DD700D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08E2242-EA0A-4D23-B27D-780C7DD700D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08E2242-EA0A-4D23-B27D-780C7DD700D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFBA2F13-65DE-446E-8970-CC781079EB9A}
+	EndGlobalSection
+EndGlobal

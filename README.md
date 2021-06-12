@@ -9,4 +9,4 @@
 
 ---
 
-Если нашли какие-то ошибки то мне можно написать на [4PDA](https://4pda.to/forum/index.php?showuser=7402299) и в [Telegram](https://t.me/DaniilPublic)
+Если нашли какие-то ошибки то мне можно написать на [4PDA](https://4pda.to/forum/index.php?showuser=7402299) и в [Telegram](https://t.me/DaniilPublic).

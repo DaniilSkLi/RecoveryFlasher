@@ -16,3 +16,5 @@ It has the ability to install drivers for Xiaomi devices, it is completely in Ru
 Если нашли какие-то ошибки то мне можно написать на [4PDA](https://4pda.to/forum/index.php?showuser=7402299) и в [Telegram](https://t.me/DaniilPublic).
 
 If you find any errors, you can write to me on [4PDA](https://4pda.to/forum/index.php?showuser=7402299) and in [Telegram](https://t.me/DaniilPublic).
+
+<sub>English translate by Google translator</sub>

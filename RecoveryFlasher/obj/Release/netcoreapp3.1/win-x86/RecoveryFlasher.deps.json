@@ -7,13 +7,18 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {},
     ".NETCoreApp,Version=v3.1/win-x86": {
-      "RecoveryFlasher/1.0": {
+      "RecoveryFlasher/1.1": {
         "dependencies": {
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x86": "3.1.15",
           "runtimepack.Microsoft.WindowsDesktop.App.Runtime.win-x86": "3.1.15"
         },
         "runtime": {
           "RecoveryFlasher.dll": {}
+        },
+        "resources": {
+          "en-001/RecoveryFlasher.resources.dll": {
+            "locale": "en-001"
+          }
         }
       },
       "runtimepack.Microsoft.NETCore.App.Runtime.win-x86/3.1.15": {
@@ -1066,7 +1071,7 @@
     }
   },
   "libraries": {
-    "RecoveryFlasher/1.0": {
+    "RecoveryFlasher/1.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

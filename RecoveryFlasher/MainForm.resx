@@ -57,10 +57,310 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblDoing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 25</value>
+  </data>
+  <data name="pbDoing.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 23</value>
+  </data>
+  <data name="&gt;&gt;AboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>AboutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;AboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOpenRecovery.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 461</value>
+  </data>
+  <data name="&gt;&gt;slcLanguage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mainMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainMenu.Name" xml:space="preserve">
+    <value>mainMenu</value>
+  </data>
+  <data name="&gt;&gt;OfficialTWRPStripMenuItem.Name" xml:space="preserve">
+    <value>OfficialTWRPStripMenuItem</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnStart.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>RecoveryFlasher</value>
+  </data>
+  <data name="mainMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="AboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <data name="lblDoing.Text" xml:space="preserve">
+    <value>Прогресс</value>
+  </data>
+  <data name="lblOpenRecovery.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="драйвераToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 20</value>
+  </data>
+  <data name="драйвераToolStripMenuItem.Text" xml:space="preserve">
+    <value>Драйвера MI</value>
+  </data>
+  <data name="btnStart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 23</value>
+  </data>
+  <data name="&gt;&gt;btnStart.Name" xml:space="preserve">
+    <value>btnStart</value>
+  </data>
+  <data name="&gt;&gt;pbDoing.Name" xml:space="preserve">
+    <value>pbDoing</value>
+  </data>
+  <data name="&gt;&gt;lblDoing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="slcLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 23</value>
+  </data>
+  <data name="OfficialTWRPStripMenuItem.Text" xml:space="preserve">
+    <value>На оф. сайте TWRP</value>
+  </data>
+  <data name="&gt;&gt;openRecoveryFile.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblDoing.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Xda4PdaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblOpenRecovery.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOpenRecovery.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TWRPToolStripMenuItem.Name" xml:space="preserve">
+    <value>TWRPToolStripMenuItem</value>
+  </data>
+  <data name="mainMenu.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="btnOpenRecovery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 27</value>
+  </data>
+  <data name="&gt;&gt;btnOpenRecovery.Name" xml:space="preserve">
+    <value>btnOpenRecovery</value>
+  </data>
+  <data name="DriverInstallToolStripMenuItem.Text" xml:space="preserve">
+    <value>Установить</value>
+  </data>
+  <data name="&gt;&gt;btnStart.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>400, 300</value>
+  </data>
+  <data name="&gt;&gt;pbDoing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="slcLanguage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;openRecoveryFile.Name" xml:space="preserve">
+    <value>openRecoveryFile</value>
+  </data>
+  <data name="pbDoing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 124</value>
+  </data>
+  <data name="lblDoing.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14.25pt</value>
+  </data>
+  <data name="&gt;&gt;драйвераToolStripMenuItem.Name" xml:space="preserve">
+    <value>драйвераToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;lblDoing.Name" xml:space="preserve">
+    <value>lblDoing</value>
+  </data>
+  <data name="&gt;&gt;lblOpenRecovery.Name" xml:space="preserve">
+    <value>lblOpenRecovery</value>
+  </data>
+  <data name="&gt;&gt;pbDoing.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;slcLanguage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnOpenRecovery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 23</value>
+  </data>
+  <data name="&gt;&gt;btnOpenRecovery.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lblDoing.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="slcLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 426</value>
+  </data>
+  <data name="openRecoveryFile.Filter" xml:space="preserve">
+    <value>Recovery|*.img</value>
+  </data>
+  <data name="pbDoing.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;OfficialTWRPStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnOpenRecovery.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblDoing.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="TWRPToolStripMenuItem.Text" xml:space="preserve">
+    <value>Найти рекавери</value>
+  </data>
+  <data name="slcLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;DriverInstallToolStripMenuItem.Name" xml:space="preserve">
+    <value>DriverInstallToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;pbDoing.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnStart.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lblOpenRecovery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 31</value>
+  </data>
+  <data name="mainMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 24</value>
+  </data>
+  <data name="DriverInstallToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="AboutDriversToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="&gt;&gt;драйвераToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Xda4PdaToolStripMenuItem.Text" xml:space="preserve">
+    <value>На 4PDA/XDA</value>
+  </data>
+  <data name="lblDoing.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 96</value>
+  </data>
+  <data name="&gt;&gt;AboutDriversToolStripMenuItem.Name" xml:space="preserve">
+    <value>AboutDriversToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;slcLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblOpenRecovery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>632, 116</value>
+  </data>
+  <data name="&gt;&gt;TWRPToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainMenu.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="AboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="btnOpenRecovery.Text" xml:space="preserve">
+    <value>Выбрать рекавери</value>
+  </data>
+  <data name="TWRPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 20</value>
+  </data>
+  <data name="&gt;&gt;AboutDriversToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;slcLanguage.Name" xml:space="preserve">
+    <value>slcLanguage</value>
+  </data>
+  <data name="Xda4PdaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="AboutDriversToolStripMenuItem.Text" xml:space="preserve">
+    <value>О драйверах</value>
+  </data>
+  <data name="&gt;&gt;Xda4PdaToolStripMenuItem.Name" xml:space="preserve">
+    <value>Xda4PdaToolStripMenuItem</value>
+  </data>
+  <data name="btnStart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 56</value>
+  </data>
+  <data name="&gt;&gt;mainMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnStart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnStart.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblOpenRecovery.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;DriverInstallToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblOpenRecovery.Text" xml:space="preserve">
+    <value>*Рекавери должно иметь расширение .img</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="openRecoveryFile.Title" xml:space="preserve">
+    <value>Открыть файл рекавери</value>
+  </data>
+  <data name="btnStart.Text" xml:space="preserve">
+    <value>Прошить рекавери</value>
+  </data>
+  <data name="&gt;&gt;lblDoing.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblOpenRecovery.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="OfficialTWRPStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="mainMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblOpenRecovery.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <metadata name="openRecoveryFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>127, 17</value>
+  </metadata>
   <metadata name="mainMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="openRecoveryFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>127, 17</value>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>en-001</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
   </metadata>
 </root>

@@ -6,15 +6,20 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "RecoveryFlasher/1.0": {
+      "RecoveryFlasher/1.1": {
         "runtime": {
           "RecoveryFlasher.dll": {}
+        },
+        "resources": {
+          "en-001/RecoveryFlasher.resources.dll": {
+            "locale": "en-001"
+          }
         }
       }
     }
   },
   "libraries": {
-    "RecoveryFlasher/1.0": {
+    "RecoveryFlasher/1.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

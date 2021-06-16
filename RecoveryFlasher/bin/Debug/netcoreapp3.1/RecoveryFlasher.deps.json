@@ -9,6 +9,11 @@
       "RecoveryFlasher/1.0": {
         "runtime": {
           "RecoveryFlasher.dll": {}
+        },
+        "resources": {
+          "en-001/RecoveryFlasher.resources.dll": {
+            "locale": "en-001"
+          }
         }
       }
     }

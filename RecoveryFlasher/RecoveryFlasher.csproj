@@ -5,14 +5,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <StartupObject>RecoveryFlasher.Program</StartupObject>
-    <Version>1.0</Version>
+    <Version>1.1</Version>
     <Authors>DaniilSkLi</Authors>
     <Company />
     <Description>Flash recovery image with UI.</Description>
     <PackageProjectUrl>https://github.com/DaniilSkLi/RecoveryFlasher</PackageProjectUrl>
     <RepositoryUrl>https://github.com/DaniilSkLi/RecoveryFlasher</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <PackageReleaseNotes>First work version.</PackageReleaseNotes>
+    <PackageReleaseNotes>English translation and add deleting tmp files when form close with work state.</PackageReleaseNotes>
     <NeutralLanguage>ru</NeutralLanguage>
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
@@ -22,6 +22,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="Localization\LabelDoing.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LabelDoing.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Localization\MessageBox\Content.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Content.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Localization\MessageBox\Titles.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Titles.resx</DependentUpon>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -35,6 +50,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Localization\LabelDoing.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LabelDoing.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\MessageBox\Content.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Content.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\MessageBox\Titles.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Titles.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

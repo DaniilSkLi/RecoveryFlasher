@@ -29,6 +29,7 @@ namespace RecoveryFlasher
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.mainMenu = new System.Windows.Forms.MenuStrip();
             this.драйвераToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DriverInstallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,133 +44,112 @@ namespace RecoveryFlasher
             this.btnStart = new System.Windows.Forms.Button();
             this.lblDoing = new System.Windows.Forms.Label();
             this.pbDoing = new System.Windows.Forms.ProgressBar();
+            this.slcLanguage = new System.Windows.Forms.ComboBox();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainMenu
             // 
+            resources.ApplyResources(this.mainMenu, "mainMenu");
             this.mainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.драйвераToolStripMenuItem,
             this.AboutToolStripMenuItem,
             this.TWRPToolStripMenuItem});
-            this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(800, 24);
-            this.mainMenu.TabIndex = 0;
-            this.mainMenu.Text = "menuStrip1";
             // 
             // драйвераToolStripMenuItem
             // 
+            resources.ApplyResources(this.драйвераToolStripMenuItem, "драйвераToolStripMenuItem");
             this.драйвераToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.DriverInstallToolStripMenuItem,
             this.AboutDriversToolStripMenuItem});
             this.драйвераToolStripMenuItem.Name = "драйвераToolStripMenuItem";
-            this.драйвераToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
-            this.драйвераToolStripMenuItem.Text = "Драйвера MI";
             // 
             // DriverInstallToolStripMenuItem
             // 
+            resources.ApplyResources(this.DriverInstallToolStripMenuItem, "DriverInstallToolStripMenuItem");
             this.DriverInstallToolStripMenuItem.Name = "DriverInstallToolStripMenuItem";
-            this.DriverInstallToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
-            this.DriverInstallToolStripMenuItem.Text = "Установить";
             this.DriverInstallToolStripMenuItem.Click += new System.EventHandler(this.DriverInstallToolStripMenuItem_Click);
             // 
             // AboutDriversToolStripMenuItem
             // 
+            resources.ApplyResources(this.AboutDriversToolStripMenuItem, "AboutDriversToolStripMenuItem");
             this.AboutDriversToolStripMenuItem.Name = "AboutDriversToolStripMenuItem";
-            this.AboutDriversToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
-            this.AboutDriversToolStripMenuItem.Text = "О драйверах";
             this.AboutDriversToolStripMenuItem.Click += new System.EventHandler(this.AboutDriversToolStripMenuItem_Click);
             // 
             // AboutToolStripMenuItem
             // 
+            resources.ApplyResources(this.AboutToolStripMenuItem, "AboutToolStripMenuItem");
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
-            this.AboutToolStripMenuItem.Text = "О программе";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // TWRPToolStripMenuItem
             // 
+            resources.ApplyResources(this.TWRPToolStripMenuItem, "TWRPToolStripMenuItem");
             this.TWRPToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.OfficialTWRPStripMenuItem,
             this.Xda4PdaToolStripMenuItem});
             this.TWRPToolStripMenuItem.Name = "TWRPToolStripMenuItem";
-            this.TWRPToolStripMenuItem.Size = new System.Drawing.Size(107, 20);
-            this.TWRPToolStripMenuItem.Text = "Найти рекавери";
             // 
             // OfficialTWRPStripMenuItem
             // 
+            resources.ApplyResources(this.OfficialTWRPStripMenuItem, "OfficialTWRPStripMenuItem");
             this.OfficialTWRPStripMenuItem.Name = "OfficialTWRPStripMenuItem";
-            this.OfficialTWRPStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.OfficialTWRPStripMenuItem.Text = "На оф. сайте TWRP";
             this.OfficialTWRPStripMenuItem.Click += new System.EventHandler(this.OfficialTWRPStripMenuItem_Click);
             // 
             // Xda4PdaToolStripMenuItem
             // 
+            resources.ApplyResources(this.Xda4PdaToolStripMenuItem, "Xda4PdaToolStripMenuItem");
             this.Xda4PdaToolStripMenuItem.Name = "Xda4PdaToolStripMenuItem";
-            this.Xda4PdaToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.Xda4PdaToolStripMenuItem.Text = "На 4PDA/XDA";
             this.Xda4PdaToolStripMenuItem.Click += new System.EventHandler(this.Xda4PdaToolStripMenuItem_Click);
             // 
             // openRecoveryFile
             // 
             this.openRecoveryFile.FileName = "Get recovery file";
-            this.openRecoveryFile.Filter = "Recovery|*.img";
-            this.openRecoveryFile.Title = "Открыть файл рекавери";
+            resources.ApplyResources(this.openRecoveryFile, "openRecoveryFile");
             // 
             // btnOpenRecovery
             // 
-            this.btnOpenRecovery.Location = new System.Drawing.Point(12, 27);
+            resources.ApplyResources(this.btnOpenRecovery, "btnOpenRecovery");
             this.btnOpenRecovery.Name = "btnOpenRecovery";
-            this.btnOpenRecovery.Size = new System.Drawing.Size(138, 23);
-            this.btnOpenRecovery.TabIndex = 1;
-            this.btnOpenRecovery.Text = "Выбрать рекавери";
             this.btnOpenRecovery.UseVisualStyleBackColor = true;
             this.btnOpenRecovery.Click += new System.EventHandler(this.btnOpenRecovery_Click);
             // 
             // lblOpenRecovery
             // 
-            this.lblOpenRecovery.AutoSize = true;
-            this.lblOpenRecovery.Location = new System.Drawing.Point(156, 31);
+            resources.ApplyResources(this.lblOpenRecovery, "lblOpenRecovery");
             this.lblOpenRecovery.Name = "lblOpenRecovery";
-            this.lblOpenRecovery.Size = new System.Drawing.Size(245, 15);
-            this.lblOpenRecovery.TabIndex = 2;
-            this.lblOpenRecovery.Text = "*Рекавери должно иметь расширение .img";
             // 
             // btnStart
             // 
-            this.btnStart.Enabled = false;
-            this.btnStart.Location = new System.Drawing.Point(12, 56);
+            resources.ApplyResources(this.btnStart, "btnStart");
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(138, 23);
-            this.btnStart.TabIndex = 3;
-            this.btnStart.Text = "Прошить рекавери";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // lblDoing
             // 
-            this.lblDoing.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDoing.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDoing.Location = new System.Drawing.Point(12, 96);
+            resources.ApplyResources(this.lblDoing, "lblDoing");
             this.lblDoing.Name = "lblDoing";
-            this.lblDoing.Size = new System.Drawing.Size(776, 25);
-            this.lblDoing.TabIndex = 4;
-            this.lblDoing.Text = "Прогресс";
             // 
             // pbDoing
             // 
-            this.pbDoing.Location = new System.Drawing.Point(12, 124);
+            resources.ApplyResources(this.pbDoing, "pbDoing");
             this.pbDoing.Name = "pbDoing";
-            this.pbDoing.Size = new System.Drawing.Size(138, 23);
-            this.pbDoing.TabIndex = 5;
+            // 
+            // slcLanguage
+            // 
+            resources.ApplyResources(this.slcLanguage, "slcLanguage");
+            this.slcLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.slcLanguage.FormattingEnabled = true;
+            this.slcLanguage.Name = "slcLanguage";
+            this.slcLanguage.SelectedValueChanged += new System.EventHandler(this.slcLanguage_SelectedValueChanged);
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.slcLanguage);
             this.Controls.Add(this.pbDoing);
             this.Controls.Add(this.lblDoing);
             this.Controls.Add(this.btnStart);
@@ -177,7 +157,8 @@ namespace RecoveryFlasher
             this.Controls.Add(this.btnOpenRecovery);
             this.Controls.Add(this.mainMenu);
             this.Name = "MainForm";
-            this.Text = "RecoveryFlasher";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.mainMenu.ResumeLayout(false);
             this.mainMenu.PerformLayout();
             this.ResumeLayout(false);
@@ -201,6 +182,7 @@ namespace RecoveryFlasher
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lblDoing;
         private System.Windows.Forms.ProgressBar pbDoing;
+        private System.Windows.Forms.ComboBox slcLanguage;
     }
 }
 

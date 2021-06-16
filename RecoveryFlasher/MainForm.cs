@@ -1,27 +1,38 @@
 ﻿using RecoveryFlasher.Properties;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
 using System.IO.Compression;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ComponentModel;
+using System.Globalization;
+using System.Drawing;
 
 namespace RecoveryFlasher
 {
     public partial class MainForm : Form
     {
+        ComponentResourceManager res = new ComponentResourceManager(typeof(MainForm));
+        Size DefaultFormSize;
+
         public MainForm()
         {
             InitializeComponent();
             DeleteTMPFolder();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            DefaultFormSize = new Size(this.Size.Width, this.Size.Height);
+
+            slcLanguage.DataSource = new CultureInfo[] {
+                CultureInfo.GetCultureInfo("ru-RU"),
+                CultureInfo.GetCultureInfo("en-001")
+            };
+
+            slcLanguage.DisplayMember = "EnglishName";
+            slcLanguage.ValueMember = "Name";
         }
 
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -40,7 +51,7 @@ namespace RecoveryFlasher
 
             DeleteTMPFolder();
 
-            MessageBox.Show("Драйвера установлены!", "Уведомление", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(Localization.MessageBox.Content.DriverInstallSuccessful, Localization.MessageBox.Titles.Notification, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void CreateTMPFolder()
@@ -61,7 +72,7 @@ namespace RecoveryFlasher
 
         private void AboutDriversToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Драйвера подходят только для телеонов Xiaomi (Mi, Redmi, Poco)!\n\nДанные 'драйвера', а точнее их установщик - это программа взятая из официальной программы Xiaomi 'Mi Unlock'. Её можно найти в папке с 'Mi Unlock' под названием 'MiUsbDriver.exe'.\n\nДля их установки, нужно нажать в данной программе кнопку 'Установить', и подключить телефон в режиме 'fastboot'. Если телефон уже был подключён - переподключить.", "О драйверах", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            MessageBox.Show(Localization.MessageBox.Content.AboutDrivers, Localization.MessageBox.Titles.AboutDrivers, MessageBoxButtons.OK, MessageBoxIcon.Question);
         }
 
         private void OfficialTWRPStripMenuItem_Click(object sender, EventArgs e)
@@ -71,7 +82,7 @@ namespace RecoveryFlasher
 
         private void Xda4PdaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Рекавери для своего телефона можно найти в разделе вашего телефона на таких форумах как '4PDA.ru' и 'xda-developers.com'.\nЧаще всего рекавери находяться в разделе 'Неофициальные прошивки'.", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(Localization.MessageBox.Content.FindRecovery, Localization.MessageBox.Titles.Info, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnOpenRecovery_Click(object sender, EventArgs e)
@@ -87,7 +98,7 @@ namespace RecoveryFlasher
             else
             {
                 btnStart.Enabled = false;
-                DialogResult msgResult = MessageBox.Show("Рекавери не выбрано.", "Уведомление", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
+                DialogResult msgResult = MessageBox.Show(Localization.MessageBox.Content.RecoveryNotSelect, Localization.MessageBox.Titles.Notification, MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
 
                 if (msgResult == DialogResult.Retry)
                 {
@@ -100,6 +111,7 @@ namespace RecoveryFlasher
         {
             btnStart.Enabled = false;
             btnOpenRecovery.Enabled = false;
+            slcLanguage.Enabled = false;
 
             Thread th = new Thread(Start);
             th.Start();
@@ -114,7 +126,7 @@ namespace RecoveryFlasher
 
         private void ADBExtract()
         {
-            LabelDoing("Распаковка ADB...");
+            LabelDoing(Localization.LabelDoing.unzipADB);
 
             CreateTMPFolder();
 
@@ -150,7 +162,7 @@ namespace RecoveryFlasher
 
         private void TestFastbootMode()
         {
-            LabelDoing("Проверка fastboot...");
+            LabelDoing(Localization.LabelDoing.checkFastboot);
 
             Process process = new Process();
             process.StartInfo.FileName = "cmd.exe";
@@ -167,7 +179,7 @@ namespace RecoveryFlasher
 
             if (output == "")
             {
-                DialogResult msgResult = MessageBox.Show("Устройство не подключено.\n\nПопробовать снова?\n\nЕсли устройства дальше нет, проверьте драйвера.", "Предупреждение", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult msgResult = MessageBox.Show(Localization.MessageBox.Content.DeviceNotFound, Localization.MessageBox.Titles.Warning, MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (msgResult == DialogResult.Yes)
                 {
                     TestFastbootMode();
@@ -188,7 +200,7 @@ namespace RecoveryFlasher
                 ProgressDoingClear(4);
                 for (int i = 3; i >= 0; i--)
                 {
-                    LabelDoing($"Устройство(а): {output} Прошивка рекавери через {i} сек.");
+                    LabelDoing(string.Format(Localization.LabelDoing.WaitBeforeFlashing, output, i));
                     ProgressDoingAdd();
                     Thread.Sleep(1000);
                 }
@@ -198,7 +210,7 @@ namespace RecoveryFlasher
 
         private void Flash()
         {
-            LabelDoing("Прошивка...");
+            LabelDoing(Localization.LabelDoing.Flashing);
             ProgressDoingClear(2);
 
             string system = Environment.GetFolderPath(Environment.SpecialFolder.System);
@@ -230,19 +242,19 @@ namespace RecoveryFlasher
                 if (output == "")
                 {
                     ProgressDoingAdd();
-                    LabelDoing("Удачно!");
+                    LabelDoing(Localization.LabelDoing.Successful);
 
-                    MessageBox.Show("Поздравляю!\nУ вас кастомное рекавери :)\n\nЕсли телефон не перезагрузился в рекавери, попробуйте войти в него сами, на Xiaomi устройствах это делаеться зажатием при вкл. кнопки вкл. и громкость +.\nЕсли всё ещё нет рекавери то возможно ваш телефон нельзя прошить таким способом.\n\nХорошего дня!");
+                    MessageBox.Show(Localization.MessageBox.Content.Congratulations);
                 }
                 else
                 {
-                    LabelDoing("Ошибка :(");
-                    MessageBox.Show("Произошла ошибка :(\n\nДетали ошибки: " + output, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    LabelDoing(Localization.LabelDoing.Error);
+                    MessageBox.Show(Localization.MessageBox.Content.FlashError + output, Localization.MessageBox.Titles.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else {
-                LabelDoing("Ошибка :(");
-                MessageBox.Show("Произошла ошибка :(\n\nДетали ошибки: " + output, "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                LabelDoing(Localization.LabelDoing.Error);
+                MessageBox.Show(Localization.MessageBox.Content.FlashError + output, Localization.MessageBox.Titles.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             RemoveAll();
@@ -253,7 +265,7 @@ namespace RecoveryFlasher
         {
             CreateTMPFolder();
 
-            LabelDoing("Копирование рекавери файла...");
+            LabelDoing(Localization.LabelDoing.CopyRecoveryFile);
             ProgressDoingClear(0);
 
             string system = Environment.GetFolderPath(Environment.SpecialFolder.System);
@@ -281,7 +293,7 @@ namespace RecoveryFlasher
 
         private void RemoveAll()
         {
-            LabelDoing("Удаление временных файлов...");
+            LabelDoing(Localization.LabelDoing.DeleteTMPFiles);
 
             string system = Environment.GetFolderPath(Environment.SpecialFolder.System);
             string path = Path.GetPathRoot(system);
@@ -292,13 +304,73 @@ namespace RecoveryFlasher
                 File.Delete($"{path}\\recovery.img");
             }
 
-            LabelDoing("Файлы удалены.");
+            LabelDoing(Localization.LabelDoing.TMPFilesDeleted);
         }
 
         private void End()
         {
-            Action action = () => { btnStart.Enabled = true; btnOpenRecovery.Enabled = true; };
+            Action action = () => { btnStart.Enabled = true; btnOpenRecovery.Enabled = true; slcLanguage.Enabled = true; };
             Invoke(action);
+        }
+
+        private void LanguageSet(string language)
+        {
+            this.SuspendLayout();
+
+            FormWindowState state = FormWindowState.Normal;
+            Size size = this.Size;
+
+            if (this.WindowState == FormWindowState.Maximized)
+                state = FormWindowState.Maximized;
+
+            this.WindowState = FormWindowState.Normal;
+            this.Size = DefaultFormSize;
+
+            CultureInfo culture = CultureInfo.GetCultureInfo(language);
+            Thread.CurrentThread.CurrentUICulture = culture;
+            Thread.CurrentThread.CurrentCulture = culture;
+
+            foreach (Control component in this.Controls)
+            {
+                if (component.GetType().Equals(typeof(MenuStrip)))
+                {
+                    MenuStrip menu = (MenuStrip)component;
+                    foreach (ToolStripItem menu_item in menu.Items)
+                    {
+                        if (menu_item is ToolStripDropDownItem)
+                        {
+                            foreach (ToolStripItem dropDownItem in ((ToolStripDropDownItem)menu_item).DropDownItems)
+                            {
+                                res.ApplyResources(dropDownItem, dropDownItem.Name, culture);
+                            }
+                        }
+                        res.ApplyResources(menu_item, menu_item.Name, culture);
+                    }
+                }
+                res.ApplyResources(component, component.Name, culture);
+            }
+
+            this.WindowState = state;
+            this.Size = size;
+
+            this.ResumeLayout();
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            RemoveAll();
+        }
+
+        private void slcLanguage_SelectedValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                LanguageSet(slcLanguage.SelectedItem.ToString());
+            }
+            catch
+            {
+                
+            }
         }
     }
 }

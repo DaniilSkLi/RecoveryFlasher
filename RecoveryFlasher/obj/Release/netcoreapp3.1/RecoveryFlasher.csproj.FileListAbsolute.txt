@@ -15,3 +15,13 @@ D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcorea
 D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.dll
 D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.pdb
 D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.genruntimeconfig.cache
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\bin\Release\netcoreapp3.1\en-001\RecoveryFlasher.resources.dll
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.Localization.LabelDoing.resources
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.Localization.MessageBox.Content.resources
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.Localization.MessageBox.Titles.resources
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.About.en-001.resources
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.Localization.LabelDoing.en-001.resources
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.Localization.MessageBox.Content.en-001.resources
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.Localization.MessageBox.Titles.en-001.resources
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\RecoveryFlasher.MainForm.en-001.resources
+D:\MyProjects\Visual Studio\RecoveryFlasher\RecoveryFlasher\obj\Release\netcoreapp3.1\en-001\RecoveryFlasher.resources.dll
